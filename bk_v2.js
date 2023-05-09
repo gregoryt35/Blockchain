@@ -38,3 +38,9 @@ let btCoin = new Blockchain();
 btCoin.addBlock(new Block(1, "1/2/2022", {name: "TM", amount: 4}));
 btCoin.addBlock(new Block(2, "2/2/2022", {name: "TMI", amount: 4}));
 console.log(JSON.stringify(btCoin, null, 4));
+
+/*
+Each block has a different hash so that it can be unique so that each block has its own signature.
+The input is different since there is a different ID and a different date and different names and different amounts for each block.
+We should code a function that checks if the hashes are the same or not for each block to make sure the chain is valid.
+*/
