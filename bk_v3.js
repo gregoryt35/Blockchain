@@ -73,4 +73,4 @@ What we did was test for if the chain is valid if the hashes are what they shoul
 We got results of both true and false depending on how we changed our blockchain.
 This means that we need to ensure that our hashes are not the same as the previous blocks since they have to be unique.
 I wonder how this works on a larger scale.
-*/ 
+*/
