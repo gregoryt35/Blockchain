@@ -135,7 +135,7 @@ console.log('\nStarting miner 1..');
 //TYPE THE CODE to check the balance 
 console.log("Reward balance of Alice is", )); 
 
-
+// Reflection
 // What have you learned about the blockchain mechanism during the process of extending our simulated chain in part 5? Did you expect this when we started the part 1 of our chain? How has your knowledge on blockchain has evolved during our lessons and programming the simulated simplified chain?
 // What I learned was 
 
