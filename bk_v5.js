@@ -102,7 +102,7 @@ class Blockchain { // this initializes a Blockchain that contains multiple block
     balance = 0;
     // loop over each block of this chain ( Hint: for..of loop)
     // loop over each transaction of this block ( Hint: nested for..of loop)
-            if (trans.fromAddress ===address) {
+            if (trans.fromAddress === address) {
                                  // TYPE THE CODE => reduce the balance because it comes from you
                 if (trans.toAddress === address) {
                           // TYPE THE CODE =>increase your balance
