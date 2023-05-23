@@ -98,18 +98,18 @@ class Blockchain { // this initializes a Blockchain that contains multiple block
 
     // create a method that checks the balance of an address
     getBalanceOfAddress(address) {
-    // TYPE THE CODE => balance starts at 0 
-    // loop over each block of this chain ( Hint: for..of loop) 
-    // loop over each transaction of this block ( Hint: nested for..of loop) 
-            if (trans.fromAddress===address) {
+    // TYPE THE CODE => balance starts at 0
+    balance = 0;
+    // loop over each block of this chain ( Hint: for..of loop)
+    // loop over each transaction of this block ( Hint: nested for..of loop)
+            if (trans.fromAddress ===address) {
                                  // TYPE THE CODE => reduce the balance because it comes from you
-                if(trans.toAddress===address) {
+                if (trans.toAddress === address) {
                           // TYPE THE CODE =>increase your balance
                      // close the inner loop
                   //close the the outer loop
               //return balance you have when done looping
             }   // end of the method
-    
         }
     }
 
@@ -130,7 +130,7 @@ btCoin.createTransaction(new Transaction('address2', 'address1', 100));
 // after we create those transactions, they will be pending
 console.log('\nStarting miner 1..');
 // TYPE THE CODE to apply the method minePendingTransactions (‘Alice-address’) to your coin
-
+minePendingTransactions('Alice-address');
 
 //TYPE THE CODE to check the balance 
 console.log("Reward balance of Alice is", )); 
