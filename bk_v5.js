@@ -99,16 +99,23 @@ class Blockchain { // this initializes a Blockchain that contains multiple block
     // create a method that checks the balance of an address
     getBalanceOfAddress(address) {
     // TYPE THE CODE => balance starts at 0
-    balance = 0;
-    // loop over each block of this chain ( Hint: for..of loop)
-    // loop over each transaction of this block ( Hint: nested for..of loop)
-            if (trans.fromAddress === address) {
-                                 // TYPE THE CODE => reduce the balance because it comes from you
+        balance = 0;
+        for (block of blockchain) {
+            // loop over each transaction of this block ( Hint: nested for..of loop)
+            for (transaction of block) {
+                if (trans.fromAddress === address) {
+                    // TYPE THE CODE => reduce the balance because it comes from you
+                    balance -= reward
+                }
                 if (trans.toAddress === address) {
                           // TYPE THE CODE =>increase your balance
+                    balance += reward
+                }
                      // close the inner loop
-                  //close the the outer loop
+            }
+        } //close the the outer loop
               //return balance you have when done looping
+        return balance;
             }   // end of the method
         }
     }
@@ -133,11 +140,11 @@ console.log('\nStarting miner 1..');
 minePendingTransactions('Alice-address');
 
 //TYPE THE CODE to check the balance 
-console.log("Reward balance of Alice is", )); 
+console.log("Reward balance of Alice is", reward)); 
 
 // Reflection
 // What have you learned about the blockchain mechanism during the process of extending our simulated chain in part 5? Did you expect this when we started the part 1 of our chain? How has your knowledge on blockchain has evolved during our lessons and programming the simulated simplified chain?
-// What I learned was 
+// What I learned was you can get the address of a specific block, and also add a reward system to mining blocks on the Blockchain. I did not expect this when we started part 1 since I did not know how the Blockchain worked when we started. My knowledge has evolved immensely since I can see firsthand how the blockchgain actually works.
 
 // What went well and what didn’t go as expected?
 // What went well was implementing my own implementations to the code. What didn't go as expected was doing the testing and the debugging since it was tedioius.
